@@ -1,4 +1,19 @@
+title: "Table1 Package Website"
 url: ~
 template:
   bootstrap: 5
-  theme: arrow-dark 
+  bootswatch: minty
+  theme: breeze-light 
+home:
+  sidebar:
+    structure: [links, license, community, citation, authors, dev, custom]
+    components:
+      custom:
+        title: Site Details
+        text: This site was made by Taner Bertuna, package was make by Benjamin Rich.
+footer:
+  structure: 
+    left: [built_with, developed_by]
+    right: [discplaimer]
+  components:
+    discplaimer: Site made by Taner Bertuna with pkgdown

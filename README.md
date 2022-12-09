@@ -68,4 +68,4 @@ table1(~ age + sex + stage + edema + spiders + hepato + ascites +
          copper + trig | trt, data=dat)
 ```
 
-![Example result: table of descriptive statistics from pbc data](tools/readme/table1-example-pbc.png)
+
