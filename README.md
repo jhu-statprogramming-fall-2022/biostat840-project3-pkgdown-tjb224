@@ -6,6 +6,11 @@
 
 An R package for generating tables of descriptive statistics in HTML.
 
+github link: https://github.com/benjaminrich/table1
+website link: 
+
+I customized the footer, the sidebar, the theme, used mint bootswatch, and changed the title. 
+
 ## Installation
 
 To install from CRAN:

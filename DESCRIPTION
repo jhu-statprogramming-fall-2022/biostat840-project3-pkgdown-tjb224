@@ -13,7 +13,7 @@ Description: Create HTML tables of descriptive statistics, as one would expect
     article.
 License: GPL-3
 Depends: R (>= 3.5.0)
-Imports: stats,Formula,knitr,htmltools,yaml
+Imports: stats,Formula,knitr,htmltools,yaml, tidyverse, here, ggplot2, purrr, forcats, flextable
 Suggests: boot,MatchIt,rmarkdown,printr,kableExtra,flextable
 VignetteBuilder: knitr
 Encoding: UTF-8
