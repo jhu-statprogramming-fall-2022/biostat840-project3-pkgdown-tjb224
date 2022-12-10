@@ -1,5 +1,15 @@
 # table1
 
+Package made by Ben Rich
+Website and example data analysis by Taner Bertuna
+
+github link: https://github.com/benjaminrich/table1
+website link: 
+
+I customized the footer, the sidebar, the theme, used mint bootswatch, and changed the title.
+
+Exported functions: units, label, signif_pad, update_html, t1flex, knit_print.table1, parse.abbrev.render.code. render.strat.default, subsetp, table.rows, print.table1, render.varlabel, t1kable, render.default, render.missing.default, table1, stats.default, t1read, sats.apply.rounding, render.continous.default, as.dataframe.table1, eqcut, render.categorical.default.
+
 [![R-CMD-check](https://github.com/benjaminrich/table1/workflows/R-CMD-check/badge.svg)](https://github.com/benjaminrich/table1/actions)
 [![CRAN\_Release\_Badge](https://www.r-pkg.org/badges/version-ago/table1)](https://CRAN.R-project.org/package=table1)
 [![CRAN\_Download\_Badge](https://cranlogs.r-pkg.org/badges/table1)](https://CRAN.R-project.org/package=table1)
