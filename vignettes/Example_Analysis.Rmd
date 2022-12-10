@@ -4,10 +4,21 @@ author: "Taner Bertuna"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Example analysis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+Objective: The objective of this data analysis is to explore the trends in viewership for the reality TV show Survivor. 
+
+Link to the data and the data dictionary:
+https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-06-01/readme.md
+
+The data:
+
+The data is from the survisorR package, created by Daniel Oehm. The data set compiles data on the first 40 seasons of survivor, indluding location, viewership information, season winner, and important dates for each season, etc. 
+
+
 
 ```{r}
 library(tidyverse)
@@ -17,6 +28,7 @@ library(table1)
 library(purrr)
 library(forcats)
 library(flextable)
+library(table1)
 ```
 
 Load Data 
@@ -48,6 +60,11 @@ Make a column that notes if the finale had more views than the premier
 finale_views <- survivor_summary %>% pluck(16) 
 prem_views <- survivor_summary %>% pluck(15)
 
+prem_views_df <- prem_views %>% as.data.frame()
+finale_views_df <- finale_views %>% as.data.frame()
+
+finale_views_flex <- structure(finale_views, class = "flextable") 
+prem_views_flex <- structure(prem_views, class = "flextable")
 
 finale_more_view <- function(x) {
   x > 0 
@@ -56,8 +73,8 @@ Finale_minus_prem <- function(prem, finale) {
   finale - prem
 }
 
-comp_test <- compose(finale_more_view, Finale_minus_prem)
-prem_vs_finale <- comp_test(prem_views, finale_views)
+comp_test <- purrr::compose(finale_more_view, Finale_minus_prem)
+prem_vs_finale <- comp_test(prem_views_df, finale_views_df)
 
 survivor_summary <- survivor_summary %>% mutate(finale_had_more_views = prem_vs_finale)
 
@@ -133,5 +150,5 @@ Looking at the data it appears that there is little difference in average viewer
 Functions Used:
 dyplr - filter, select, mutate, group_by, summarise, as_tibble
 forecats - fct_reorder
-tanle1 - table1, as.data.frame
+table1 - table1, as.data.frame (this converts a table1 object to a df)
 purrr - compose, pluck
