@@ -8,4 +8,4 @@ temp.*
 *.Rproj
 .Rproj.user
 CRAN-RELEASE
-docs
+

@@ -1,0 +1,8 @@
+pandoc: '2.18'
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  Example_Analysis: Example_Analysis.html
+  table1-examples: table1-examples.html
+last_built: 2022-12-13T15:31Z
+
