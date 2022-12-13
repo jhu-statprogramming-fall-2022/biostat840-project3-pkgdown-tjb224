@@ -16,7 +16,7 @@ https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-06-01/
 
 The data:
 
-The data is from the survisorR package, created by Daniel Oehm. The data set compiles data on the first 40 seasons of survivor, indluding location, viewership information, season winner, and important dates for each season, etc. 
+The data is from the survisorR package, created by Daniel Oehm. The data set compiles data on the first 40 seasons of survivor, including location, viewership information, season winner, and important dates for each season, etc. 
 
 
 

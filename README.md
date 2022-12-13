@@ -4,11 +4,13 @@ Package made by Ben Rich
 Website and example data analysis by Taner Bertuna
 
 github link: https://github.com/benjaminrich/table1
-website link: 
+website link: https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-tjb224
 
 I customized the footer, the sidebar, the theme, used mint bootswatch, and changed the title.
 
-Exported functions: units, label, signif_pad, update_html, t1flex, knit_print.table1, parse.abbrev.render.code. render.strat.default, subsetp, table.rows, print.table1, render.varlabel, t1kable, render.default, render.missing.default, table1, stats.default, t1read, sats.apply.rounding, render.continous.default, as.dataframe.table1, eqcut, render.categorical.default.
+Exported functions: units (unit attribute), label(label attribute), signif_pad(round numbers with 0 padding), update_html(update HTML), t1flex(convert table1 object to flextable object), knit_print.table1(method for printing knitr context), parse.abbrev.render.code(parse abbreviated code for rendering table output), render.strat.default(render strata labels for table output), subsetp(subset function thatpreserves column attributes), table.rows(conver to HTML table rows), print.table1(print table1 object), render.varlabel(render variable lavels for table output), t1kable(convert table1 object to kabelExtra), render.default(render values for table output), render.missing.default(render missinf values for table output), table1(generate HTML table 1), stats.default(compute some basic descriptive statistics), t1read(read and augment data with extended metadata attributes), stats.apply.rounding(apply rounding to stats), render.continuous.default(render cont values for table output), as.dataframe.table1(convert table1 object to data frame), eqcut(cut a continuous variable into equal sized groups), render.categorical.default(render categorical values for table output).
+
+Use link to see exported function descriptions: https://www.rdocumentation.org/packages/table1/versions/1.4.2
 
 [![R-CMD-check](https://github.com/benjaminrich/table1/workflows/R-CMD-check/badge.svg)](https://github.com/benjaminrich/table1/actions)
 [![CRAN\_Release\_Badge](https://www.r-pkg.org/badges/version-ago/table1)](https://CRAN.R-project.org/package=table1)
